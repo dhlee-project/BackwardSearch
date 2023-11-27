@@ -131,7 +131,7 @@ python D1.Train-KD-Model.py --encoder_model convnext_base --encoding_size 256 --
 
 &nbsp;
 
-## Get Pretrained Weight and Inference Result of Our Paper 
+## Get Trained Weight and Extracted Embeddings of Our Paper 
 We provide download URL of our trained weight and all inference results as follow :    
 URL : https://drive.google.com/file/d/18yTX6uaj5xDVJgNYL0N8pC45Z5SxbsVX/view?usp=sharing
 &nbsp;
