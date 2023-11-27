@@ -174,7 +174,7 @@ python E1.Model-Evaluation.py --encoder_model convnext_base --encoding_size 256 
 ~~~
 
 ## Visualization Example
-We provide code to visualize the result of our test query set
+We provide a code to visualize the result of our test query set
 ~~~
 # APY dataset with a bird class condition
 python E2.Model-Query-Visualization.py --encoder_model convnext_base --encoding_size 256 --dataset_name wikiart --category_type stylegenre --inverse_lambda 1.1 --query_key 100
