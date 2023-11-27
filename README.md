@@ -37,8 +37,8 @@ ___
 ### 1. Download Dataset
 We used the Caltech-UCSD Birds-200-2011 (CUB), Attribute Pascal and Yahoo (APY), and WikiArt datasets for our experiments.
 The `CUB` dataset can be downloaded from https://www.vision.caltech.edu/datasets/cub_200_2011/.
-For the APY dataset, the official link is https://vision.cs.uiuc.edu/attributes/. However, the download link seemed to be currently down. As an alternative, We downloaded the APY dataset from   
-https://github.com/BatsResearch/mazzetto-neurips22-code. Finally, the WikiArt dataset was downloaded from https://huggingface.co/datasets/huggan/wikiart
+For the `APY` dataset, the official link is https://vision.cs.uiuc.edu/attributes/. However, the download link seemed to be currently down. As an alternative, We downloaded the APY dataset from   
+https://github.com/BatsResearch/mazzetto-neurips22-code. Finally, the `WikiArt` dataset was downloaded from https://huggingface.co/datasets/huggan/wikiart
    
 We provide our dataset that has already been pre-processed to resize images, split the dataset and rearrange label list
 Our pre-processed Data URL : https://drive.google.com/file/d/1FQGeDeeBLXrlQQ-4bv4sjApUvbku7kXX/view?usp=sharing 
