@@ -2,22 +2,28 @@
 
 ![Figure1](./fig/Figure1.jpg)  
 
-Figure 1: Overview of the proposed conditional image retrieval method on the WikiArt dataset. 
-t_0 is initial image retrieval results, and t_n is 'pop art' conditioned image retrieval results. 
-Our proposed method updates embedding vectors t_0 to t_n through t_i by exploring embedding space.
-We highlight with a green box when the retrieved image has same class as condition.
+Figure 1: Overview of the proposed method. 
+Example query from the WikiArt dataset, where t_o is initial IR results, and t_n is Rococo' 
+conditioned IR results. The proposed method updates embedding vectors t_o to t_n through t_i
+by exploring the embedding space. A green box indicates that the retrieved image has the same 
+class as the condition.
 
 ### Abstract
-Content-Based Image Retrieval (CBIR) is essential in computer vision research.
-With the development of deep neural networks, digitized images can be effectively represented as low-dimensional features.
-As a result, Deep neural network based CBIR has demonstrated strong performance in image retrieval. Specifically,
-Composed Images Retrieval (CoIR) to reflect the specific search intention of users has shown promising results. 
-However, in many cases, CoIR models require a large number of images and relational caption triples for the training model. 
-This study proposes a new method of conditional Image retrieval. It provides a method to find embedding vectors 
-for not only a query but also explicit conditions of the user’s intent by an inverse mapping approach. 
-As a result, features of the original query are updated to a new point of the latent space so as to conform to the conditions.
-To evaluate the performance of our method, we conducted experiments using WikiArt, aPY, and CUB benchmark categorical datasets.
-Our method was compared with CoIR methods, and we found that it outperforms zero-shot-based models.
+Conditional image retrieval (CIR), which involves retrieving images by a query image along with user-specified conditions, 
+is essential in computer vision research for efficient image search and automated image analysis. The existing approaches,
+such as composed image retrieval (CoIR) methods, have been actively studied. However, these methods face challenges as 
+they require either a triplet dataset or richly annotated image-text pairs, which are expensive to obtain. In this work,
+we demonstrate that CIR at the image-level concept can be achieved using an inverse mapping approach that explores
+the model's inductive knowledge. Our proposed CIR method, called Backward Search, updates the query embedding to conform 
+to the condition. Specifically, the embedding of the query image is updated by predicting the probability of the label and
+minimizing the difference from the condition label. This enables CIR with image-level concepts while preserving the
+context of the query. In this paper, we introduce the Backward Search method that enables single and multi-conditional 
+image retrieval. Moreover, we efficiently reduce the computation time by distilling the knowledge. We conduct experiments
+using the WikiArt, aPY, and CUB benchmark datasets. The proposed method achieves an average mAP@10 of 0.541 on the datasets,
+demonstrating a marked improvement compared to the CoIR methods in our comparative experiments. Furthermore, by employing 
+knowledge distillation with the Backward Search model as the teacher, the student model achieves a significant reduction
+in computation time, up to 160 times faster with only a slight decrease in performance. The implementation of our method
+is available at the following URL: https://github.com/dhlee-work/BackwardSearch.
 
 ### Dependency
 All experiments were conducted using Ubuntu 22.04 as the OS with Nvidia RTX 3090 and AMD Ryzen 5900. Utilized 
